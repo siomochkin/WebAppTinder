@@ -18,7 +18,7 @@ public class ServerApp {
         Server server = new Server(8080);
 
         ServletContextHandler handler = new ServletContextHandler();
-        ServletHolder holderUser = new ServletHolder(new UserServlet(1, userDAO, likedDAO));
+        ServletHolder holderUser = new ServletHolder(new UserServlet(2, userDAO, likedDAO));
         ServletHolder holderLiked = new ServletHolder(new LikedServlet(userDAO, likedDAO));
         ServletHolder holderStatic = new ServletHolder(new StaticServlet());
 

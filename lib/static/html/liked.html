@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>Like page</title>
+    <title>Liked Users</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="/css/lib/static/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
         <div class="col-8 offset-2">
             <div class="panel panel-default user_panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">They like you</h3>
+                    <h3 class="panel-title">Liked Users</h3>
                 </div>
                 <div class="panel-body">
                     <div class="table-container">
@@ -31,7 +31,7 @@
                             <tr>
                                 <td width="10">
                                     <div class="avatar-img">
-                                        <img class="img-circle" src=${v.image}/>  
+                                        <img class="img-circle" src=${v.image} />  
                                     </div>
 
                                 </td>
@@ -41,13 +41,11 @@
                                 <td class="align-middle">
                                     ${k}
                                 </td>
-                                <td class="align-middle">
-                                    Last Login: 6/10/2017<br>
-                                    <small class="text-muted">5 days ago</small>
+                                <td  class="align-middle">
+                                    Last Login:  6/10/2017<br><small class="text-muted">5 days ago</small>
                                 </td>
                             </tr>
-                            </
-                            #list>
+                            </#list>
                             </tbody>
                         </table>
                     </div>
