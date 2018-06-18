@@ -30,7 +30,7 @@ public class UserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         PrintWriter writer = resp.getWriter();
-        File file = new File("lib/static/html/index.html");
+        File file = new File("lib/static/html/LikePage.html");
         String outText = new FileUtils().readFileToString(file);
 
         if (id == userDAO.id + 1) {
