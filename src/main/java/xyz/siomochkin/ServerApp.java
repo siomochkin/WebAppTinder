@@ -3,6 +3,7 @@ package xyz.siomochkin;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import xyz.siomochkin.servlets.ChatServlet;
 import xyz.siomochkin.servlets.LikedServlet;
 import xyz.siomochkin.servlets.StaticServlet;
 import xyz.siomochkin.servlets.UserServlet;
@@ -20,11 +21,13 @@ public class ServerApp {
         ServletContextHandler handler = new ServletContextHandler();
         ServletHolder holderUser = new ServletHolder(new UserServlet(2, userDAO, likedDAO));
         ServletHolder holderLiked = new ServletHolder(new LikedServlet(userDAO, likedDAO));
+        ServletHolder chatHardcoded = new ServletHolder(new ChatServlet());
         ServletHolder holderStatic = new ServletHolder(new StaticServlet());
 
 
         handler.addServlet(holderUser, "/user");
         handler.addServlet(holderLiked, "/liked");
+        handler.addServlet(chatHardcoded, "/messages/1");
         handler.addServlet(holderStatic, "/css/*");
 
         server.setHandler(handler);

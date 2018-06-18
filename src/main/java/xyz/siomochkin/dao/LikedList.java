@@ -1,4 +1,4 @@
-package xyz.siomochkin.DB;
+package xyz.siomochkin.dao;
 
 import xyz.siomochkin.model.Liked;
 

@@ -1,7 +1,6 @@
 package xyz.siomochkin.dao;
 
 import xyz.siomochkin.model.User;
-import xyz.siomochkin.DB.UsersList;
 
 import java.util.HashMap;
 

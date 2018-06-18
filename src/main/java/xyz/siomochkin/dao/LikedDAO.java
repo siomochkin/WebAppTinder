@@ -1,7 +1,7 @@
 package xyz.siomochkin.dao;
 
 import xyz.siomochkin.model.Liked;
-import xyz.siomochkin.DB.LikedList;
+
 import java.util.HashMap;
 
 public class LikedDAO {
